@@ -1,6 +1,9 @@
 # Wine
 A wine brewing script developed by Erryial and Ellis. This is a team minigame, which best suits group sizes between 2 and 4.
 
+# Credit
+The BlueSky_Keymaster is Codedesign's script. We had to make a few small modifications to get it to behave we wanted. As such, we renamed the script and changed the event names to ensure no compatibility problems with preexisting cd_keymaster installs
+
 # Showcase
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/gC4ox9S3Y0g/0.jpg)](http://www.youtube.com/watch?v=gC4ox9S3Y0g "FiveM BlueSky_Wine")
 
