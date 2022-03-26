@@ -2,7 +2,7 @@
 A wine brewing script developed by Erryial and Ellis. This is a team minigame, which best suits group sizes between 2 and 4.
 
 # Showcase
-Video here
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/gC4ox9S3Y0g/0.jpg)](http://www.youtube.com/watch?v=gC4ox9S3Y0g "FiveM BlueSky_Wine")
 
 # Installation
 1. Take the 3 folders (BlueSky_Wine, BlueSky_Sounds, BlueSky_Keymaster) and put them into your fivem resources folder
@@ -68,6 +68,7 @@ When the player is done, they will head back up to the vinery and sell the wine 
 Sell location:
 
 <img src="https://i.imgur.com/8ODxr7q.jpg" height="300">
+
 
 
 
