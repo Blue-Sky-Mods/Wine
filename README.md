@@ -5,11 +5,11 @@ A wine brewing script developed by Erryial and Ellis. This is a team minigame, w
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/gC4ox9S3Y0g/0.jpg)](http://www.youtube.com/watch?v=gC4ox9S3Y0g "FiveM BlueSky_Wine")
 
 # Installation
-1. Take the 3 folders (BlueSky_Wine, BlueSky_Sounds, BlueSky_Keymaster) and put them into your fivem resources folder
+1. Take the 3 folders (BlueSky_Wine, BlueSky_Sound, BlueSky_Keymaster) and put them into your fivem resources folder
 2. Add below to your server.cfg
   ``` 
   start BlueSky_Wine
-  start BlueSky_Sounds
+  start BlueSky_Sound
   start BlueSky_Keymaster
   ```
 3. Execute SQL file `BlueSky_Wine.sql` or its contents on your fiveM database. This will add 4 items to item table (highQualWine, lowQualWine, grape, water). You will likely have water in the table anyways if you have an esx install.
