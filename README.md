@@ -49,7 +49,7 @@ While they are doing this, they must also make repairs around the facility.
 
 Minigame example:
 
-<img src="https://i.imgur.com/FakE3Wf.jpeg" height="300">
+<img src="https://i.imgur.com/3mDNSwL.jpg" height="300">
 
 Repair Locations:
 
