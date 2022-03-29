@@ -1,3 +1,2 @@
-# Interact Sound
-
-Play sounds using the NUI environment in FiveM's FXServer.
+# BlueSky Sound
+Play distance oriented sounds using the NUI environment in FiveM's FXServer.

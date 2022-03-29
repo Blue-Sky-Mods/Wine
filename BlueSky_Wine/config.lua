@@ -43,3 +43,12 @@ Config.startAmount = 5
 Config.fineWinePrice = 2000
 Config.basicWinePrice = 400
 Config.ingredLoadAmount = 5
+
+Config.miniGameSettings = {
+    keys = {"W", "A", "S", "D"}, -- Send a result message if true and callback when message closed or callback immediately without showing the message
+    speed = 30, -- pixels / second
+    winScore = 50, -- Score to win
+    loseScore = -25, -- score to lose
+    missScore = -5, -- This is added to your score on a mistake (25+-5=20)
+	fps = 30 -- FPS. 30 FPS seems to work for everyone. Feel free to bring it higher if you're using less keys.
+}

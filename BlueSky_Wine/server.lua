@@ -85,7 +85,7 @@ ESX.RegisterServerCallback("EWine:fix", function(source, cb, fixItem)
         if IsOn == true then
             Grape = Grape - Config.startAmount
             Water = Water - Config.startAmount
-            TriggerEvent('Erryial_Sound_SV:PlayWithinDistanceOfCoords', 50.0, 'startup', 0.1, Config.Switch)
+            TriggerEvent('BlueSky_Sound_SV:PlayWithinDistanceOfCoords', 50.0, 'startup', 0.1, Config.Switch)
         end
         TriggerClientEvent("EWine:updateData", -1, fixItem, IsOn)
         TriggerClientEvent("EWine:updateData", -1, "grape", Grape)
@@ -139,7 +139,7 @@ Citizen.CreateThread(function()
         if IsOn then
             if Temperature > Config.highTemperature then
                 mistakes = mistakes + 1
-                TriggerEvent('Erryial_Sound_SV:PlayWithinDistanceOfCoords', 30.0, 'overheat', 0.1,
+                TriggerEvent('BlueSky_Sound_SV:PlayWithinDistanceOfCoords', 30.0, 'overheat', 0.1,
                     Config.temperatureLocation)
             end
             if Temperature < Config.lowTemperature then
@@ -147,7 +147,7 @@ Citizen.CreateThread(function()
             end
             if Acid > Config.highAcidLevel then
                 mistakes = mistakes + 1
-                TriggerEvent('Erryial_Sound_SV:PlayWithinDistanceOfCoords', 30.0, 'acid', 0.1, Config.acidLocation)
+                TriggerEvent('BlueSky_Sound_SV:PlayWithinDistanceOfCoords', 30.0, 'acid', 0.1, Config.acidLocation)
             end
             if Acid < Config.lowAcidLevel then
                 mistakes = mistakes + 1
@@ -173,24 +173,24 @@ Citizen.CreateThread(function()
             if itemBreak == 1 then
                 Transformer = false;
                 TriggerClientEvent("EWine:updateData", -1, "transformer", false)
-                TriggerEvent('Erryial_Sound_SV:PlayWithinDistanceOfCoords', 45.0, 'boom', 0.1,
+                TriggerEvent('BlueSky_Sound_SV:PlayWithinDistanceOfCoords', 45.0, 'boom', 0.1,
                     Config.transformerLocation)
             elseif itemBreak == 2 then
                 Air = false;
                 TriggerClientEvent("EWine:updateData", -1, "air", false)
-                TriggerEvent('Erryial_Sound_SV:PlayWithinDistanceOfCoords', 35.0, 'metal', 0.1, Config.filterLocation)
+                TriggerEvent('BlueSky_Sound_SV:PlayWithinDistanceOfCoords', 35.0, 'metal', 0.1, Config.filterLocation)
             elseif itemBreak == 3 then
                 Breaker = false;
                 TriggerClientEvent("EWine:updateData", -1, "breaker", false)
-                TriggerEvent('Erryial_Sound_SV:PlayWithinDistanceOfCoords', 35.0, 'shock', 0.1, Config.breakerLocation)
+                TriggerEvent('BlueSky_Sound_SV:PlayWithinDistanceOfCoords', 35.0, 'shock', 0.1, Config.breakerLocation)
             elseif itemBreak == 4 then
                 Liquid = false;
                 TriggerClientEvent("EWine:updateData", -1, "liquid", false)
-                TriggerEvent('Erryial_Sound_SV:PlayWithinDistanceOfCoords', 35.0, 'water', 0.1, Config.liquidLocation)
+                TriggerEvent('BlueSky_Sound_SV:PlayWithinDistanceOfCoords', 35.0, 'water', 0.1, Config.liquidLocation)
             elseif itemBreak == 5 then
                 Hopper = false;
                 TriggerClientEvent("EWine:updateData", -1, "hopper", false)
-                TriggerEvent('Erryial_Sound_SV:PlayWithinDistanceOfCoords', 35.0, 'thud', 0.1, Config.hopperLocation)
+                TriggerEvent('BlueSky_Sound_SV:PlayWithinDistanceOfCoords', 35.0, 'thud', 0.1, Config.hopperLocation)
             end
         end
     end

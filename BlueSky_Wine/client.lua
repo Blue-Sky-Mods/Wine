@@ -338,19 +338,7 @@ function tryPlayerFix(Box, name, prompt)
                 local grindResult
 
                 TaskStartScenarioInPlace(PlayerPedId(), 'WORLD_HUMAN_WELDING', 0, true)
-                local CustomSettings = {
-                    settings = {
-                        handleEnd = false, -- Send a result message if true and callback when message closed or callback immediately without showing the message
-                        speed = 7, -- pixels / second
-                        scoreWin = 150, -- Score to win
-                        scoreLose = -150, -- Lose if this score is reached
-                        maxTime = 60000, -- sec
-                        maxMistake = 5, -- How many missed keys can there be before losing
-                        speedIncrement = 1 -- How much should the speed increase when a key hit was successful
-                    },
-                    keys = {"a", "w", "d", "s", "g"} -- You can hash this out if you want to use default keys in the java side.
-                }
-                local win = exports['Erryial_Keymaster']:StartKeyMaster(CustomSettings)
+                local win = exports['BlueSky_Keymaster']:StartKeyMaster(Config.miniGameSettings)
                 ClearPedTasksImmediately(PlayerPedId())
                 if win == true then
                     ESX.TriggerServerCallback('EWine:fix', function(output)
