@@ -1,0 +1,64 @@
+
+  .Game {
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .1);
+    width: 100px;
+    margin: 1vh;
+    position: relative;
+  }
+
+  .Block {
+    position: absolute;
+    width: stretch;
+    height: 100px;
+    border-radius: 5px;
+    text-align: center;
+
+  }
+  
+  .Target {
+    position: absolute;
+    width: stretch;
+    height: 100px;
+    bottom: 5vh;
+    border: 3px solid White;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .IncomingBlock {
+    position: absolute;
+    width: stretch;
+    height: 100px;
+    color: cyan;
+    border: 3px solid cyan;
+    border-radius: 5px;
+  }
+
+  .BlockText {
+      height: 100%;
+      margin: 0;
+      line-height: 100px;
+  }
+
+  .win {
+    animation: glowGreen .5s 1;
+  }
+
+  .lose{
+    animation: glowRed .5s 1;
+  }
+
+  @keyframes glowGreen {
+    0% {background-color: rgba(0, 0, 0, 0);}
+    50% {background-color: green;border-color: green;}
+    100% {background-color: rgba(0, 0, 0, 0);}
+  }
+
+  @keyframes glowRed {
+    0% {background-color: rgba(0, 0, 0, 0);transform: scale(1.1) rotate(0deg);border-color:white}
+    25% {transform: scale(1.1) rotate(-15deg);}
+    50% {background-color: red;transform: scale(1.1) rotate(0deg);border-color: red;}
+    75% {transform: scale(1.1) rotate(8deg);}
+    100% {background-color: rgba(0, 0, 0, 0);transform: scale(1.0) rotate(0deg);border-color:white}
+  }

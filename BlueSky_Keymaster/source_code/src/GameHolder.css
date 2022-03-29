@@ -1,0 +1,20 @@
+.Container {
+    display: blonpm startck;
+    background-color: rgba(0, 0, 0, .3);
+    width: fit-content;
+    margin-inline: auto;
+    height: 100%;
+}
+
+.Container h1 {
+    margin: 0;
+    height: 10%;
+}
+
+.GameHolder {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    border-radius: 5px;
+    height: 90%;
+}
